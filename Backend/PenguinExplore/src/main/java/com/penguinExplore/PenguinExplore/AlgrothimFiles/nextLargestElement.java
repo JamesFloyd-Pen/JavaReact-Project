@@ -1,6 +1,8 @@
 package com.penguinExplore.PenguinExplore.AlgrothimFiles;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 
 public class nextLargestElement {
 
@@ -10,6 +12,8 @@ public class nextLargestElement {
         for(int x : results){
             System.out.println(x+ " ");
         }
+
+        penguin();
     }
     
     static ArrayList<Integer> nextLargerElement(int[] arr) {
@@ -30,6 +34,15 @@ public class nextLargestElement {
         }
 
         return result;
+    }
+
+    static void penguin(){
+        Deque<Integer> stack = new ArrayDeque<>();
+
+        stack.push(5);
+        System.out.println(stack.peek());
+        stack.pop();
+        System.out.println(stack.peek());
     }
 
 
