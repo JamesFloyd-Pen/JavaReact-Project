@@ -18,7 +18,7 @@ public class WeatherController {
     private WeatherService weatherService;
 
     // Replace with your actual API key from https://openweathermap.org/api
-    private static final String API_KEY = "";
+    private static final String API_KEY = "2f9f1695d843f117a0269d26f307bebe";
     private static final String BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
     @GetMapping("/{city}")
